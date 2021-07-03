@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <title>Javascript Coding Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body style="background-color: black;" >
+    <div class="container" >
+     <div style="text-align:  center;"> <h2 class="col-xs-12" style="color: white;" >Shippio FrontEnd JavaScript exam</h2></div>
+      <form role="form">  
+        <div class="form-group">
+          <button id="start" type="button" onclick="OnStart()" class="btn btn-outline-primary btn-lg nectar-button">start random</button>
+          <button id="stop" type="button" onclick="onstop()" class="btn btn-outline-danger btn-lg ">stop random</button>
+          <button id="sort" type="button" onclick="OnSorting()" class="btn btn-outline-success btn-lg ">sort</button>
+        </div>
+      </form>
+
+      <div class="contents">
+        <table class="table table-light" >
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Picture</th>
+              <th scope="col" >Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Phone</th>              
+              <th scope="col">Balance</th>
+            </tr>
+          </thead >
+          <tbody id="myTable">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="json/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
